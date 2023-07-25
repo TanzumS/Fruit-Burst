@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Tailwind & daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<script
+src="https://kit.fontawesome.com/62ed91f5cc.js"
+crossorigin="anonymous"
+></script>
+<!-- css connection -->
+<link rel="stylesheet" href="./styles.css">
+<!-- tailwind custom color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+</head>
+<body class="font w-[100%] px-40 ">
+    <header class="justify-center text-center mt-10">
+        <nav>
+            <div class="navbar bg-base-100 text-white bg-orange-600 rounded-full px-9 ">
+                <div class="navbar-start">
+                  
+                    <ul tabindex="0" class="flex gap-4">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                
+                </div>
+                <div class="navbar-center">
+                    <img src="./images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                   
+                    <div class="form-control">
+                        <input type="text" placeholder="Search here" class="rounded-full input input-bordered w-24 md:w-auto " />
+                      </div>
+                      <i class="fa-solid fa-magnifying-glass "></i> 
+                  
+                </div>
+              </div>
+        </nav>
+        <!-- landing page -->
+        <div class="hero min-h-screen mt-4 carousel carousel-item relative w-full" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-error text-white">Shop Now</button>
+              </div>
+            </div>
+          </div>
+                  <div class="absolute flex justify-between transform -translate-y-2/3 left-80 right-80 top-2/3">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+            
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
